@@ -1,0 +1,21 @@
+<div th:fragment="generalscript">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script>
+      $(".button-aside-menu").sideNav();
+
+      $(document).ready(function() {
+        $('select').material_select();
+      });
+
+      $(document).ready(function(){
+        $('.datepicker').pickadate({format: 'yyyy-mm-dd' });
+      });
+
+      $(document).ready(function(){
+        $('.timepicker').pickatime({
+          twelvehour: false,
+        });
+      });
+  </script>
+</div>
